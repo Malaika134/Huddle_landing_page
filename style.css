@@ -9,7 +9,7 @@ body {
     background-size: cover;
     background-color: hsl(257, 40%, 49%);
     color: white;
-    min-height: 100vh;
+    min-height: 120vh;
 }
 
 .container {
@@ -18,12 +18,12 @@ body {
     flex-direction: column;
     padding: 2% 3%;
 }
-
+/* 
 header {
     position: fixed;
-    top: 3%;
+    top: 10px;
     left: 10px;
-}
+} */
 
 .main_container {
     height: 80%;
@@ -106,7 +106,77 @@ button:hover {
     transition-duration: 0.5s;
 }
 
-    @media (max-width:1080px){
+@media (max-width: 1080px) {
+    .container {
+        width: 100%;
+        max-width: 375px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        /* padding: 2% 5%; */
+        text-align: center;
+    }
+
+    .main_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_container {
+        height: 100%;
+        max-height: 260px;
+    }
+
+    .main_img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .disc_container {
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    header img {
+        width: 75%; 
+        max-width: 200px; 
+        left: 0;
+    }
+    
+
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 250px;
+    font-size: 15px;
+        margin: 10px auto; /* Center it */
+        display: block; /* Ensure it behaves properly */
+    }  
+
+    .icons {
+        justify-content: center;
+        right: 0;
+    margin-top: 50px;
+
+    }
+}
+
+.icon {
+    padding: 9px;
+    margin: 15px 10px;
+}
+
+
+    /* @media (max-width:1080px){
     
         .container {
         justify-content: center;
@@ -135,4 +205,4 @@ button:hover {
 
         }
     
-    }
+    } */
